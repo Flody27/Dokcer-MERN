@@ -1,0 +1,132 @@
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #d2d2d2;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9a9a9a;
+    border-radius: 5px;
+    margin-block: 2em;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #777777;
+}
+
+.toggle-icons {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .toggle-menu {
+        display: none
+    }
+}
+
+.g-recaptcha {
+    transform: scale(0.80);
+    -webkit-transform: scale(0.80);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    margin-left: 10px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.little p {
+    color: #6E7780;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.little li {
+    color: #6E7780;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.little ul {
+    color: #6E7780;
+    list-style: disc;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.input-img {
+    display: none;
+}
+
+.label-img {
+    display: block;
+    position: relative;
+    background-color: #288cff;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.images-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery {
+    margin: 1rem 0.5rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.image-gallery button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: lightcoral;
+}
+
+.image-gallery button:hover {
+    background-color: red;
+}
+
+.image-gallery p {
+    padding: 0 0.5rem;
+    margin: 0;
+}
+
+.num-form::-webkit-inner-spin-button,
+.num-form::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.num-form {
+    -moz-appearance: textfield;
+}
+
+.parsley-errors-list.filled li {
+    margin: 4px;
+}
+
+.icn-obligatorio {
+    color: red;
+    font-size: medium;
+    padding: 0 2px;
+}

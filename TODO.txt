@@ -1,0 +1,2 @@
+Dockerizar la app
+Subirla a Git

@@ -1,0 +1,632 @@
+.contenedorLogin {
+  background-image: url("./imgs/fondo_miel.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.regresar-btn-login {
+  font-size: 28px;
+  float: left;
+  position: absolute;
+  color: white;
+  background: linear-gradient(to right, rgb(20, 22, 60) 0%, rgb(3, 33, 123) 79%);
+  padding: 10px 8px;
+  left: 25px;
+  top: 15px;
+  border-radius: 25px;
+  word-spacing: 0.50em;
+}
+
+.regresar-btn-login:hover {
+  background: white;
+  color: #e4be02;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 480px) {
+  hr.horizontalRuleLogin {
+    margin: 0 0 0 0;
+  }
+
+  h5.readyAccountLogin {
+    margin-top: 10px;
+  }
+
+  .regresar-btn-login {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+  h5.readyAccountLogin {
+    margin-top: 25px;
+  }
+
+}
+
+.ocultar {
+  display: none;
+}
+
+.little p {
+  color: #6E7780;
+  font-size: 12px;
+  margin: 4px;
+}
+
+.little li {
+  color: #6E7780;
+  font-size: 12px;
+  margin: 2px;
+}
+
+.little ul {
+  color: #6E7780;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.btn-filtro {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #636363;
+  line-height: 39px;
+}
+
+.btn-filtro:hover {
+  color: #e7ab3c;
+}
+
+.nombre-producto p {
+  color: rgb(37, 37, 37);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nombre-producto p:hover {
+  color: #e4be02;
+}
+
+.cantidad-producto {
+  margin: 10px 0;
+}
+
+.cantidad-producto button {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 75px;
+}
+
+.cantidad-producto button:hover {
+  color: #e4be02;
+}
+
+.cantidad-producto input {
+  width: 3rem;
+  height: 2rem;
+  margin: 5px;
+  border: 1.5px solid #ebebeb;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.carrito-divisor {
+  border-right: 1.5px solid #ebebeb;
+}
+
+@media (max-width: 575.98px) {
+  .carrito-divisor {
+    border: none;
+  }
+}
+
+.carrito-nav {
+  overflow-y: scroll;
+  height: 175px;
+}
+
+.carrito-nav::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.carrito-nav::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carrito-nav::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.carrito-nav-btn {
+  background: transparent;
+  border: none;
+}
+
+.carrito-nav-btn:hover {
+  color: #dc3545;
+}
+
+.navegacion {
+  background: #fff;
+  ;
+}
+
+.header-page {
+  height: 120px;
+}
+
+.perfil-card {
+  /* border: none; */
+}
+
+.input-img {
+  display: none;
+}
+
+.label-img {
+  display: block;
+  position: relative;
+  background-color: #288cff;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  width: 150px;
+  padding: 5px;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.label-img:hover {
+  background-color: #1d73d4;
+}
+
+.authentication-btn {
+  padding: 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+.authentication-btn:hover {
+  color: #e4be02;
+}
+
+.msg-alerta {
+  font-size: 14px;
+  color: #d3b001;
+}
+
+/* @keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+} */
+
+/* Menu lateral Responsive */
+.navbar-brand {
+  color: #000;
+}
+
+.navbar-brand:hover {
+  color: #000;
+}
+
+.menu-responsive {
+  display: none;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el menú lateral */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #000;
+}
+
+/* Estilos para el encabezado del menú */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  align-items: center;
+  height: 50px;
+}
+
+.menu-title {
+  margin-right: auto;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Estilos para el botón de cierre */
+.closebtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  outline: none;
+}
+
+.closebtn:hover {
+  color: #dc3545
+}
+
+/* Estilos para el fondo semitransparente */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1020;
+  display: none;
+  overflow: hidden;
+}
+
+/*Carrito */
+.side-carrito {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.carrito-content {
+  padding: 10px;
+  width: 100%;
+  height: calc(100% - 240px);
+  overflow: auto;
+}
+
+.bottom-carrito {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.Titulo-Precio {
+  float: left;
+  padding: 10px;
+}
+
+.Precio {
+  float: right;
+  padding: 10px;
+}
+
+.btn-comprar-carrito {
+  background-color: #e7ab3c;
+  border: #e7ab3c;
+  color: #ebebeb !important;
+  font-size: 20px !important;
+}
+
+.btn-comprar-carrito:hover {
+  color: #ebebeb;
+}
+
+.btn-ver-carrito {
+  background-color: #222;
+  border: #222;
+  color: #ebebeb !important;
+  text-decoration: none;
+  font-size: 20px !important;
+}
+
+.btn-ver-carrito:hover {
+  background-color: #000;
+  border: #000;
+  color: #ebebeb;
+}
+
+
+.carrito-content::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.carrito-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carrito-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.carrito-content .si-text,
+.carrito-content .si-pic,
+.carrito-content .si-close {
+  padding: 5px;
+}
+
+/* Bloquear interacion con el contenido de fondo */
+.menu-open {
+  overflow: hidden;
+}
+
+/* Mostrar elementos en responsive */
+.responsive-show {
+  display: none;
+}
+
+/* Estilos para el carrito responsiive */
+.info-carrito {
+  background: #fefefe;
+  padding: 10px;
+  z-index: 100;
+  background-clip: border-box;
+  border: 0.0625rem solid rgba(41, 43, 48, 0.05);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.info-carrito .btn-warning {
+  background-color: #e7ab3c;
+  border: #e7ab3c;
+  color: #ebebeb;
+}
+
+.btn-eliminar {
+  border: none;
+  background-color: #ffffffd1;
+  position: absolute;
+  top: 5px;
+  left: 19px;
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+}
+
+.btn-eliminar {
+  font-size: .8rem;
+}
+
+.btn-transparante {
+  border: none;
+  background: transparent;
+}
+
+#mySidenavCarrito {
+  width: 75%;
+}
+
+#mySidenav {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+
+  /* Estilos para pantallas pequeñas aquí */
+  .header-responsive {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+
+  .sidenav {
+    display: block;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+  }
+
+  .responsive-invisble {
+    display: none;
+  }
+
+  .responsive-show {
+    display: block;
+  }
+
+  .carrito-container {
+    padding-bottom: 120px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  /* Estilos para tablets en orientación vertical aquí */
+  .header-responsive {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+
+  .sidenav {
+    display: block;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+  }
+
+  .responsive-invisble {
+    display: none;
+  }
+
+  .responsive-show {
+    display: block;
+  }
+
+  .carrito-container {
+    padding-bottom: 120px;
+  }
+
+  #mySidenavCarrito {
+    width: 55%;
+  }
+
+  #mySidenav {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  /* Estilos para tablets en orientación horizontal aquí */
+  .header-responsive {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+
+  .sidenav {
+    display: block;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+  }
+
+  .responsive-invisble {
+    display: none;
+  }
+
+  .responsive-show {
+    display: block;
+  }
+
+  .carrito-container {
+    padding-bottom: 120px;
+  }
+
+  #mySidenavCarrito {
+    width: 55%;
+  }
+
+  #mySidenav {
+    width: 40%;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  /* Estilos para pantallas grandes aquí */
+  /* .header-responsive {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  } */
+
+
+}
+
+.parsley-errors-list.filled li {
+  margin: 4px;
+}
+
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.btn-no-flt {
+  border: none;
+  border-radius: 75%;
+  padding: 5px 10px;
+}
+
+.btn-no-flt i {
+  color: #dc3545;
+}
+
+.btn-no-flt:hover i {
+  color: #ff374b;
+}
+
+.img-banner-rps {
+  min-height: 250px;
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fa.fa-whatsapp {
+  font-size: 16px;
+}
